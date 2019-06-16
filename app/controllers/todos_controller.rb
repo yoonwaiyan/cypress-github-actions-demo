@@ -1,5 +1,5 @@
 class TodosController < ApplicationController
-  before_filter :find_todo, :except => [:index, :create]
+  before_action :find_todo, :except => [:index, :create]
 
   def index
     render json: Todo.all
