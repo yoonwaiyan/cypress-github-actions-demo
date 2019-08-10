@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>TodoMvcApi</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<%= yield %>
+<body>
+  <p class="welcome">
+    <% if current_user.present? %>
+    <%= current_user.email %> <%= link_to 'Logout', '/users/sign_out', :method => :delete %>
+    <% end %>
+  </p>
+  <%= yield %>
 
 </body>
+
 </html>

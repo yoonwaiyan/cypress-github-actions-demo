@@ -1,17 +1,17 @@
 export default {
   destroy(id) {
-    return $.ajax({url: `api/todos/${id}`, type: 'delete'});
+    return $.ajax({ url: `api/todos/${id}`, type: 'delete' });
   },
 
-  create(text) {
-    return $.post('api/todos', {title: text});
+  create(text, uid) {
+    return $.post('api/todos', { title: text, uid });
   },
 
   update(id, data) {
-    return $.ajax({url: `api/todos/${id}`, type: 'put', data});
+    return $.ajax({ url: `api/todos/${id}`, type: 'put', data });
   },
 
-  fetch() {
-    return $.ajax({url: 'api/todos'});
+  fetch(uid) {
+    return $.ajax({ url: `api/todos?uid=${uid}` });
   }
 };

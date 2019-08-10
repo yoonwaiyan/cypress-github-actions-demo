@@ -1,10 +1,10 @@
-import React         from 'react';
-import Todo          from './todo.jsx';
-import {FilterTypes} from '../constants';
+import React from 'react';
+import Todo from './todo.jsx';
+import { FilterTypes } from '../constants';
 
 var shouldNotRender = (todo, filterType) => {
   return (filterType == FilterTypes.ACTIVE && todo.get('completed')) ||
-         (filterType == FilterTypes.COMPLETED && !todo.get('completed'));
+    (filterType == FilterTypes.COMPLETED && !todo.get('completed'));
 };
 
 export default class Todos extends React.Component {

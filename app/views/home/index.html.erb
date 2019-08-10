@@ -1,5 +1,5 @@
 <div id="content">Loading...</div>
 
-<script id="initial-state" type="application/json">
+<script id="initial-state" type="application/json" data-uid="<%= current_user.id %>">
   <%= raw @todos.to_json %>
 </script>

@@ -376,3 +376,10 @@ Can't use it globally since it destroys checkboxes in Firefox
     bottom: 10px;
   }
 }
+
+.welcome {
+  position: relative;
+  text-align: right;
+  top: 0;
+  width: 100%;
+}
