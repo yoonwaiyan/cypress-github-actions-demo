@@ -1,6 +1,6 @@
-import React         from 'react';
-import actions       from '../actions';
-import {FilterTypes} from '../constants';
+import React from 'react';
+import actions from '../actions';
+import { FilterTypes } from '../constants';
 
 export default class extends React.Component {
   render() {
@@ -16,6 +16,7 @@ export default class extends React.Component {
       <li>
         <a
           href="#"
+          data-cy="onlyActive"
           className={this.props.filterType == FilterTypes.ACTIVE ? 'selected' : ''}
           onClick={this._onActive.bind(this)}>
           Active
@@ -24,8 +25,9 @@ export default class extends React.Component {
       <li>
         <a
           href="#"
+          data-cy="onlyCompleted"
           className={this.props.filterType == FilterTypes.COMPLETED ?
-                                              'selected' : ''}
+            'selected' : ''}
           onClick={this._onCompleted.bind(this)} >
           Completed
         </a>

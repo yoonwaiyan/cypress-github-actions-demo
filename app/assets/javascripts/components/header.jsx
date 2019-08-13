@@ -9,6 +9,7 @@ export default class Header extends React.Component {
       <form onSubmit={this._onSubmit.bind(this)}>
         <input
           ref="input"
+          data-cy="newTodo"
           className="new-todo"
           type=""
           placeholder="What needs to be done?"

@@ -1,6 +1,7 @@
-import App        from './components/app.jsx';
+import React from 'react';
+import App from './components/app.jsx';
 import { render } from 'react-dom';
-import store      from './store';
+import store from './store';
 
 // Bootstrap the app
 var target = document.getElementById('content');

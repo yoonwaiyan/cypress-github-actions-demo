@@ -15,5 +15,5 @@
 //= require jquery_ujs
 
 // Because react-dom actually doesn't even require React, but uses it.
-window.React = require('react');
-$(document).ready(() => require('./index'));
+// window.React = require('react');
+// $(document).ready(() => require('./index'));
