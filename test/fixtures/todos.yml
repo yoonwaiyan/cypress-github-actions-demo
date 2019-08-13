@@ -1,0 +1,24 @@
+todo1:
+  title: "1 hour walk"
+  completed: false
+  user: user1
+
+todo2:
+  title: "Go shopping"
+  completed: true
+  user: user1
+
+todo3:
+  title: "Buy some food"
+  completed: false
+  user: user1
+
+todo4:
+  title: "Wash my car"
+  completed: false
+  user: user2
+
+todo5:
+  title: "Go to gym"
+  completed: true
+  user: user2

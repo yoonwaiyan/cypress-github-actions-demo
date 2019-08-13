@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'boot'
 
 require 'rails/all'
@@ -15,6 +17,8 @@ module TodoMvcApi
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
-    config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 react ] ]"
+    # config.browserify_rails.commandline_options = "-t [ babelify --presets [ es2015 react ] ]"
   end
 end
+
+Rails.application.config.active_record.sqlite3.represent_boolean_as_integer = true

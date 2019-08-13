@@ -1,0 +1,5 @@
+{
+  "baseUrl": "http://localhost:5001",
+  "defaultCommandTimeout": 10000,
+  "loginEndpoint": "/sign_in_before_test"
+}

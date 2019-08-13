@@ -24,7 +24,7 @@ Todo.create!(
 
 Todo.create!(
   title: 'Buy some food',
-  completed: true,
+  completed: false,
   user: user1
 )
 
@@ -36,6 +36,6 @@ Todo.create!(
 
 Todo.create!(
   title: 'Go to gym',
-  completed: true,
+  completed: false,
   user: user2
 )

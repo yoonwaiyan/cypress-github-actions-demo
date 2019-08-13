@@ -64,6 +64,9 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
     crass (1.0.4)
+    cypress-on-rails (1.4.1)
+      rack
+    database_cleaner (1.7.0)
     devise (4.6.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -200,10 +203,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt
   bootsnap
   browserify-rails
   byebug
   coffee-rails
+  cypress-on-rails (~> 1.0)
+  database_cleaner
   devise
   htmlbeautifier
   jbuilder (~> 2.0)

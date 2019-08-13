@@ -12,7 +12,7 @@ user2 = User.create!(
 
 Todo.create!(
   title: '1 hour walk',
-  completed: false,
+  completed: true,
   user: user1
 )
 
@@ -24,18 +24,18 @@ Todo.create!(
 
 Todo.create!(
   title: 'Buy some food',
-  completed: true,
+  completed: false,
   user: user1
 )
 
 Todo.create!(
   title: 'Wash my car',
-  completed: false,
+  completed: true,
   user: user2
 )
 
 Todo.create!(
   title: 'Go to gym',
-  completed: true,
+  completed: false,
   user: user2
 )

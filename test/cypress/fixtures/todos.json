@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Buy some food",
+    "completed": false,
+    "user": 1
+  },
+  {
+    "id": 2,
+    "title": "Wash my car",
+    "completed": false,
+    "user": 1
+  },
+  {
+    "id": 3,
+    "title": "Go to gym",
+    "completed": false,
+    "user": 1
+  }
+]
