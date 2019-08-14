@@ -10,13 +10,13 @@ const todoList = [
     title: 'Another one important thing',
     completed: true,
   },
+  {
+    title: 'New task',
+    completed: false,
+  },
 ]
 
 describe('Todo management', function () {
-  before(() => {
-    cy.appFixtures()
-  })
-
   beforeEach(() => {
     cy.server()
     cy.route('POST', '**/api/todos').as('createTodo')

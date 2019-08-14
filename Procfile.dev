@@ -1,0 +1,2 @@
+web: rails s -e test -p 5001
+cypress: yarn run cypress open --project ./test

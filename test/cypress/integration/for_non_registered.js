@@ -1,5 +1,6 @@
 describe('Non-registered users', function () {
-  before(() => {
+  beforeEach(() => {
+    cy.app('clean')
     cy.appScenario('mixed_tasks_status')
   })
 
