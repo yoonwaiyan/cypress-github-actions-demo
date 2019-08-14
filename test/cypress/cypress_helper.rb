@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 # This is loaded once before the first command is executed
 
 begin
- require 'database_cleaner'
+  require 'database_cleaner'
 rescue LoadError => e
- puts e.message
+  puts e.message
 end
 
 begin
@@ -24,7 +26,7 @@ factory = FactoryBot if defined?(FactoryBot)
 factory = FactoryGirl if defined?(FactoryGirl)
 
 CypressOnRails::SmartFactoryWrapper.configure(
-    always_reload: !Rails.configuration.cache_classes,
-    factory: factory,
-    files: %w(spec/factories.rb ./spec/factories/**/*.rb)
+  always_reload: !Rails.configuration.cache_classes,
+  factory: factory,
+  files: %w[spec/factories.rb ./spec/factories/**/*.rb test/factories/*.rb]
 )
