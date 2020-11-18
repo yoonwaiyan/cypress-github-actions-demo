@@ -21,7 +21,7 @@ jobs:
         run: yarn install --check-files
       - name: Prepare data for testing
         run: |-
-          rails db:test:prepare
+          bundle exec rails db:test:prepare
       - name: Cypress.io
         uses: cypress-io/github-action@v2
         with:
