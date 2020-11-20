@@ -4,5 +4,5 @@
 APP_PATH = File.expand_path('../config/application', __dir__)
 require_relative '../config/boot'
 
-sleep(80)
+sleep(10)
 require 'rails/commands'
