@@ -1,4 +1,3 @@
-sleep(10000)
 if defined?(CypressOnRails)
   CypressOnRails.configure do |c|
     c.cypress_folder = File.expand_path("#{__dir__}/../../spec/cypress")
