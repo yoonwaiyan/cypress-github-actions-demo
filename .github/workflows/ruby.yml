@@ -23,7 +23,7 @@ jobs:
         run: |-
           bundle exec rails db:test:prepare
       - name: Cypress.io
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v2.3.8
         with:
           install: false
           start: bundle exec rails server -e test -p 5017
